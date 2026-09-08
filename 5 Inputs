@@ -1,0 +1,21 @@
+{
+  {
+Console.Write("Input 1: ");
+string oneInput = Console.ReadLine();
+
+Console.Write("Input 2: ");
+string twoInput = Console.ReadLine();
+
+Console.Write("Input 3: ");
+string threeInput = Console.ReadLine();
+
+Console.Write("Input 4: ");
+string fourInput = Console.ReadLine();
+
+Console.Write("Input 5: ");
+string fiveInput = Console.ReadLine();
+
+Console.WriteLine("Thanks for the Inputs");
+
+     }
+}
