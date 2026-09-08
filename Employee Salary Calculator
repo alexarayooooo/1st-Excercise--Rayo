@@ -1,0 +1,28 @@
+{
+Console.Write("Basic Salary: ");
+double basicSalary = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Overtime hour: ");
+int overtimeHours = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Overtime rate: ");
+double overtimeRate = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Allowance: ");
+double allowance = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Tax rate: ");
+double taxRate = Convert.ToDouble(Console.ReadLine());
+
+double grossSalary = basicSalary + (overtimeHours * overtimeRate) + allowance;
+double taxAmount = grossSalary * taxRate;
+double netSalary = grossSalary - taxAmount;
+
+Boolean earnsMoreThan50000 = netSalary > 50000;
+
+Console.WriteLine($"Gross Salary: {grossSalary}");
+Console.WriteLine($"Tax Amount: {taxAmount}");
+Console.WriteLine($"Net Salary: {netSalary}");
+Console.WriteLine($"Earns More Than $50,000: {earnsMoreThan50000}");
+
+}
